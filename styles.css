@@ -1,0 +1,14 @@
+body {
+  background-color: #F5F2e8;
+  color: #1E1E1E;
+  font-family: 'Merriweather', sans-serif;
+}
+
+nav {
+  background-color: black;
+}
+
+#profile_picture {
+  border-radius: 50%;
+  height: 120px;
+}
