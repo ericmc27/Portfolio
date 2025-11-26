@@ -4,23 +4,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Eric's portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  </style>
 </head>
 
 <body>
-  <img src="profile_picture.jpg" id="profile_picture" />
-  <h1 style="color: #2B2B2B;">Eric Castillo</h1>
-  <nav></nav>
+  <nav>
+    <ul>
+      <li class="home active" onclick="handleDisplayChange('home')">Home</li>
+      <li class="about" onclick="handleDisplayChange('about')">About me</li>
+      <li class="projects" onclick="handleDisplayChange('projects')">Projects</li>
+    </ul>
+  </nav>
 
-  <div>
-    queloque my friend
+  <div id="home-div">
+    <div>
+      <h1>Hi, I'm Eric Castillo</h1>
+      <h1>A research-minded problem solver—curious, creative,<br> and always learning through challenges</h1>
+    </div>
+
+    <div>
+      <picture class="eric-picture">
+        <source srcset="profile-picture.avif" type="image/avif">
+        <source srcset="profile-picture.webp" type="image/webp">
+        <img src="profile-picture.png" class="profile-picture" alt="Eric's profile picture" />
+      </picture>
+    </div>
   </div>
+
+  <div id="about-div">
+    <p>
+      Hi, my name is Eric Castillo, and I'm one of the most curious people you'll ever meet.
+      Growing up around a father who had created his own invoicing software and had already been selling it before
+      I was born, I was given the chance to tinker with computers and technology from an early age.
+    </p>
+
+    <p>
+      Curiosity quickly became a driving force in my life. My brothers and I would constantly ask our father questions—not
+      just about his software, but about any technology-related topic we could think of.
+      This early habit of questioning and exploring laid the foundation for my research and problem-solving skills.
+    </p>
+
+    <p>
+      I graduated from Westchester Community College before transferring to Mercy University, where I earned an associate's degree and a bachelor's degree in Cybersecurity.
+      Along the way, I built practical experience through applied coursework, laboratory work, technical bootcamps, and hands-on projects.
+      I also worked twice as a tutor, supporting students in computer programming and cybersecurity courses,
+      which strengthened my ability to explain complex concepts and mentor others. I assist my father at times in his small business,
+      acting as the go-to resource for technology-related tasks and providing support in customer service as needed
+    </p>
+
+    <p>
+      I have a foundational background in technology, with exposure to cybersecurity, full-stack software development, and team-based projects. I'm a fast learner who enjoys research
+      and technical problem-solving, and I'm seeking my first technical role where I can continue to develop
+      and strengthen my skills while growing professionally.
+
+    </p>
+  </div>
+
+  <div id="projects-div">
+    <div>Placeholder</div>
+    <div>Placeholder</div>
+    <div>Placeholder</div>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2026 Eric Castillo. All rights reserved.</p>
+  </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
