@@ -1,14 +1,42 @@
 body {
-  background-color: #F5F2e8;
-  color: #1E1E1E;
-  font-family: 'Merriweather', sans-serif;
+  margin: 0px;
+  background-color: #171717;
+  color: #a6ff52;
+  font-family: "Bungee Spice", sans-serif;
 }
 
 nav {
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  gap: 20px;
 }
 
-#profile_picture {
+ul {
+  display: inline-flex;
+  justify-content: center;
+  height: 50px;
+  margin: 0px;
+  background-color: #2e2c2c;
+  color: whitesmoke;
+  border-radius: 11px;
+  list-style: none;
+  gap: 20px;
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+
+.profile_picture {
   border-radius: 50%;
-  height: 120px;
+}
+
+li.active {
+  color: #a6ff52 !important;
+}
+
+div:not(#about) {
+  display: none
 }
